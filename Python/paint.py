@@ -8,6 +8,10 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 
+Authors:
+Samuel Acevedo
+David Vieyra
+
 """
 
 from turtle import *
