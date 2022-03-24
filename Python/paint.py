@@ -7,19 +7,20 @@ Exercises
 3. Complete rectangle.
 4. Complete triangle.
 5. Add width parameter.
-
-Authors:
+Authors: 
+Circle
 Samuel Acevedo
 ITC
 2do Semestre
-
 David Vieyra
 ITC
 2do Semestre
-
 Aarón Castillo
 ITD
 6to Semestre
+=======
+Gilberto Echeverria
+main
 
 """
 
