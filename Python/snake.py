@@ -18,6 +18,7 @@ colors = ['cyan', 'dark goldenrod', 'chartreuse', 'purple', 'chocolate']
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+boundary = randrange(300, 500) #Randomizes board size
 
 def change(x, y):
     "Change snake direction."
@@ -26,7 +27,7 @@ def change(x, y):
 
 def inside(head):
     "Return True if head inside boundaries."
-    return -200 < head.x < 190 and -200 < head.y < 190
+    return -boundary < head.x < boundary and -boundary < head.y < boundary
 
 def move():
     "Move snake forward one segment."
@@ -54,9 +55,9 @@ def move():
 
     square(food.x, food.y, 6, colors[foodcolor])
     update()
-    ontimer(move, 100)
-
-setup(420, 420, 370, 0)
+    ontimer(move, 50) #Makes the game faster
+    
+setup(boundary*2, boundary*2, 370, 0)
 
 snakecolor = randrange(0, 5)
 foodcolor = snakecolor
