@@ -14,9 +14,10 @@ from random import choice
 from turtle import *
 from freegames import floor, vector
 
-state = {'score': 0}
+state = {'score': 0, 'scoreText': 'Score:'}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
+uiText = Turtle(visible=False)
 aim = vector(5, 0)
 pacman = vector(-40, 0) #Changed start  position to center
 ghosts = [
@@ -106,7 +107,7 @@ def world():
 def move():
     "Move pacman and all ghosts."
     writer.undo()
-    writer.write(state['score'])
+    writer.write(state['score'], font=('Verdana', 15, 'normal', 'bold'))
 
     clear()
 
@@ -161,9 +162,12 @@ def change(x, y):
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
-writer.goto(160, 160)
+writer.goto(20, 180)
 writer.color('white')
-writer.write(state['score'])
+uiText.goto(-80, 180)
+uiText.color('white')
+uiText.write(state['scoreText'], font=('Verdana', 15, 'normal', 'bold'))
+writer.write(state['score'], font=('Verdana', 15, 'normal', 'bold'))
 listen()
 onkey(lambda: change(5, 0), 'Right')
 onkey(lambda: change(-5, 0), 'Left')
