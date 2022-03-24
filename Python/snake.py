@@ -1,4 +1,3 @@
-
 """Snake, classic arcade game.
 
 Exercises
@@ -15,6 +14,7 @@ from turtle import *
 from random import randrange
 from freegames import square, vector
 
+colors = ['cyan', 'dark goldenrod', 'chartreuse', 'purple', 'chocolate']
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
@@ -50,13 +50,18 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 10, 'black')
+        square(body.x, body.y, 9, colors[snakecolor])
 
-    square(food.x, food.y, 6, 'green')
+    square(food.x, food.y, 9, colors[foodcolor])
     update()
     ontimer(move, 100)
 
 setup(420, 420, 370, 0)
+
+snakecolor = randrange(0, 5)
+foodcolor = snakecolor
+while(foodcolor==snakecolor):
+    foodcolor = randrange(0, 5)
 hideturtle()
 tracer(False)
 listen()
