@@ -34,13 +34,13 @@ To install the required software, run the following commands:
 3. apt-get install python3-pip
 4. pip3 install freegames
 
-## Changes
-# Andres
+# Changes
+## Andres
 - Snake: speeds up the game, randomizes board size
 - Pacman: changes ghost colors, starts Pacman at the center and speeds up the game
 
-# Ignacio
+## Ignacio
 -
 
-# David
+## David
 -
