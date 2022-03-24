@@ -1,7 +1,9 @@
 # TC1001S - Herramientas Computacionales
 Sample code for the Computer Tools course challenge
 
-Author: Gilberto Echeverria
+Author:     Mario Frias Pina
+Career:     ITC
+Semester:   3
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
