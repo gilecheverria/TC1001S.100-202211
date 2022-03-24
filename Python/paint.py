@@ -10,7 +10,9 @@ Exercises
 
 """
 
+import turtle
 from turtle import *
+from math import hypot
 from freegames import vector
 
 def line(start, end):
@@ -35,7 +37,15 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    "Completed by Ignacio Moral based on Gilberto Echeverria's code"
+
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    "Hypot imported to allow radius based encounters"
+    turtle.circle(hypot(end.x-start.x, end.y-start.y)/2)
+    end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
@@ -62,7 +72,7 @@ def store(key, value):
     state[key] = value
 
 state = {'start': None, 'shape': line}
-setup(420, 420, 370, 0)
+turtle.setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
@@ -71,6 +81,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
