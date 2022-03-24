@@ -5,6 +5,13 @@ Author:     Mario Frias Pina
 Career:     ITC
 Semester:   3
 
+# Changes by Santaigo Tenza Zozaya
+## 3rd Semester, ITC
+- Paint: added Triangle and Magenta Color
+- Snake: increased the speed
+- Cannon: randomized the target's colors when starting a game
+- Memmory: 
+
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
 - Paint
