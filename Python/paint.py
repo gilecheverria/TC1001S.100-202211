@@ -8,14 +8,15 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 
-Authors:
-Gilberto Echeverria
-
+ AUTHORS:
+ ANDRES
+ IGNACIO
+ DAVID
 """
 
 import turtle
-from math import hypot
 from turtle import *
+from math import hypot
 from freegames import vector
 
 def line(start, end):
@@ -40,29 +41,45 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+    "Completed by Ignacio Moral based on Gilberto Echeverria's code"
+    "Hello"
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
-
-    turtle.circle(hypot(end.x - start.x, end.y - start.y))
-
+    "Hypot imported to allow radius based encounters"
+    turtle.circle(hypot(end.x-start.x, end.y-start.y)/2)
     end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
-
-def triangle(start, end):
-    "Draw triangle from start to end."
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
 
-    for count in range(3):
+    for count in range(4):
+        if (count==1 or count==3):
+            forward(end.x - start.x)
+            left(90)
+        else:
+            forward((end.x - start.x)/2)
+            left(90)
+
+
+    end_fill()
+
+
+def triangle(start, end):
+    up()
+    goto(start.x, start.y)
+    down()
+    
+    begin_fill()
+
+    for i in range(2):
         forward(end.x - start.x)
-        left(120)
+        left(60)
 
     end_fill()
 
@@ -92,8 +109,8 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+onkey(lambda: color('peru'), 'P')
 onkey(lambda: color('yellow'), 'Y')
-onkey(lambda: color('magenta'), 'M')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
