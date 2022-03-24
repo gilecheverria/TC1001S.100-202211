@@ -1,9 +1,12 @@
 # TC1001S - Herramientas Computacionales
 Sample code for the Computer Tools course challenge
 
-Author:     Mario Frias Pina
-Career:     ITC
-Semester:   3
+# Changes by Mario Frias Pina
+## 3rd Semester, ITC
+- Paint: Rectangle and Pink Color
+- Snake: Random movement to the food
+- Cannon: Score counter, Balloon Speed and infinite game
+- Memory: Click counter
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
