@@ -8,6 +8,10 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 
+ AUTHORS:
+ ANDRES
+ IGNACIO
+ DAVID
 """
 
 from turtle import *
@@ -39,7 +43,22 @@ def circle(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(4):
+        if (count==1 or count==3):
+            forward(end.x - start.x)
+            left(90)
+        else:
+            forward((end.x - start.x)/2)
+            left(90)
+
+
+    end_fill()
+
 
 def triangle(start, end):
     "Draw triangle from start to end."
@@ -71,6 +90,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+onkey(lambda: color('peru'), 'P')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
