@@ -72,7 +72,7 @@ def store(key, value):
     state[key] = value
 
 state = {'start': None, 'shape': line}
-turtle.setup(420, 420, 370, 0)
+setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
