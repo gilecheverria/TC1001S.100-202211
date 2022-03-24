@@ -55,7 +55,7 @@ def move():
     square(food.x, food.y, 9, colors[foodcolor])
     update()
     ontimer(move, 50) #Makes the game faster
-420
+    
 setup(boundary*2, boundary*2, 370, 0)
 
 snakecolor = randrange(0, 5)
