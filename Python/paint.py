@@ -9,7 +9,8 @@ Exercises
 5. Add width parameter.
 
 """
-
+import turtle 
+from math import hypot
 from turtle import *
 from freegames import vector
 
@@ -35,8 +36,17 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    turtle.circle(hypot(end.x - start.x, end.y - start.y))
+
+    end_fill()
 
 def rectangle(start, end):
+    "Draw rectangle from start to end."
     up()
     goto(start.x, start.y)
     down()
@@ -50,9 +60,6 @@ def rectangle(start, end):
 
     end_fill()
 
-
-    "Draw rectangle from start to end."
-    pass  # TODO
 
 def triangle(start, end):
     "Draw triangle from start to end."
@@ -95,6 +102,7 @@ onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
 onkey(lambda: color('magenta'), 'M')
 onkey(lambda: color('pink'), 'P')
+onkey(lambda: color('cyan'), 'C')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
