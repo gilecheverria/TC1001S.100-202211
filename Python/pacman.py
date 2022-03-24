@@ -18,13 +18,16 @@ state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
-pacman = vector(-40, -80)
+pacman = vector(-40, 0) #Changed start  position to center
 ghosts = [
-    [vector(-180, 160), vector(5, 0)],
-    [vector(-180, -160), vector(0, 5)],
-    [vector(100, 160), vector(0, -5)],
-    [vector(100, -160), vector(-5, 0)],
+    [vector(-180, 160), vector(5, 0), 0], #Adds an id to each ghost
+    [vector(-180, -160), vector(0, 5), 1],
+    [vector(100, 160), vector(0, -5), 2],
+    [vector(100, -160), vector(-5, 0), 3],
 ]
+
+colors = ["pink", "red", "orange", "deep sky blue"]
+
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
@@ -123,7 +126,7 @@ def move():
     goto(pacman.x + 10, pacman.y + 10)
     dot(20, 'yellow')
 
-    for point, course in ghosts:
+    for point, course, id in ghosts:
         if valid(point + course):
             point.move(course)
         else:
@@ -139,15 +142,15 @@ def move():
 
         up()
         goto(point.x + 10, point.y + 10)
-        dot(20, 'red')
+        dot(20, colors[id]) #Adds colors to each ghost
 
     update()
 
-    for point, course in ghosts:
+    for point, course, id in ghosts:
         if abs(pacman - point) < 20:
             return
 
-    ontimer(move, 100)
+    ontimer(move, 50) #Made the game run faster, from 100 to 50
 
 def change(x, y):
     "Change pacman aim if valid."
