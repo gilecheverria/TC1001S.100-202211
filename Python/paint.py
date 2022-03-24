@@ -38,7 +38,7 @@ def square(start, end):
 def circle(start, end):
     "Draw circle from start to end."
     "Completed by Ignacio Moral based on Gilberto Echeverria's code"
-
+    "Hello"
     up()
     goto(start.x, start.y)
     down()
