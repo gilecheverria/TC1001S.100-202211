@@ -14,7 +14,6 @@ from random import randrange
 from freegames import square, vector
 
 colors = ['cyan', 'dark goldenrod', 'chartreuse', 'purple', 'chocolate']
-
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
@@ -57,6 +56,7 @@ def move():
     ontimer(move, 100)
 
 setup(420, 420, 370, 0)
+
 snakecolor = randrange(0, 5)
 foodcolor = snakecolor
 while(foodcolor==snakecolor):
