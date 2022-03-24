@@ -10,7 +10,16 @@ Exercises
 
 Authors:
 Samuel Acevedo
+ITC
+2do Semestre
+
 David Vieyra
+ITC
+2do Semestre
+
+Aarón Castillo
+ITD
+6to Semestre
 
 """
 
