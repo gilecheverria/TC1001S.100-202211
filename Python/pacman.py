@@ -24,9 +24,10 @@ ghosts = [
     [vector(-180, -160), vector(0, 5), 1],
     [vector(100, 160), vector(0, -5), 2],
     [vector(100, -160), vector(-5, 0), 3],
+     [vector(100, -160), vector(-5, 0), 4]
 ]
 
-colors = ["pink", "red", "orange", "deep sky blue"]
+colors = ["pink", "red", "orange", "deep sky blue","peru"]
 
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
