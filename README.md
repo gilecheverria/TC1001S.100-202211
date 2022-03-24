@@ -1,7 +1,7 @@
 # TC1001S - Herramientas Computacionales
 Sample code for the Computer Tools course challenge
 
-# Changes by Mario Frias Pina
+## Changes by Mario Frias Pina
 ## 3rd Semester, ITC
 - Paint: Rectangle and Pink Color
 - Snake: Random movement to the food
