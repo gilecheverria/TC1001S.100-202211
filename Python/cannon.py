@@ -16,6 +16,7 @@ from freegames import vector
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
+score = 0
 
 def tap(x, y):
     "Respond to screen tap."
@@ -44,6 +45,7 @@ def draw():
     update()
 
 def move():
+    global score
     "Move ball and targets."
     # Generate a new target at random times
     if randrange(40) == 0:
@@ -53,7 +55,7 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 0.5
+        target.x -= 2
 
     # Move the cannon shot
     if inside(ball):
@@ -64,18 +66,22 @@ def move():
     dupe = targets.copy()
     targets.clear()
 
-    # Detect if the bullet hits a target
+    # Detect if the bullet hits a target and adds score
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+        else:
+            score += 1
+            print("HIT! Score is:{:d}".format(score))
 
     draw()
 
     # Detect when a target reaches the left side
     for target in targets:
         if not inside(target):
+            target.x = 200
             #targets.remove(target)
-            return
+            #return
 
     ontimer(move, 50)
 

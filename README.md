@@ -1,7 +1,26 @@
 # TC1001S - Herramientas Computacionales
 Sample code for the Computer Tools course challenge
 
-Author: Gilberto Echeverria
+## Changes by Mario Frias Pina
+## 3rd Semester, ITC
+- Paint: Rectangle and Pink Color
+- Snake: Random movement to the food
+- Cannon: Score counter, Balloon Speed and infinite game
+- Memory: Click counter
+
+## Changes by Diego Emiliano Figueroa Guillén 
+## 4th Semester, ITD
+- Paint: Circle and Cyan Color
+- Snake: Random colors for the snake and the food
+- Cannon: Increased projectile bullet speed and put the current score number at the top of the middle of the game
+- Memory: 
+
+# Changes by Santaigo Tenza Zozaya
+## 3rd Semester, ITC
+- Paint: added Triangle and Magenta Color
+- Snake: increased the speed
+- Cannon: randomized the target's colors when starting a game
+- Memmory: added text to tell the player to start playing
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
