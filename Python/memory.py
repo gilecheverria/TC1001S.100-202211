@@ -24,7 +24,7 @@ def square(x, y):
     up()
     goto(x, y)
     down()
-    color('black', 'white')
+    color('red', 'white')
     begin_fill()
     for count in range(4):
         forward(50)
@@ -69,7 +69,7 @@ def draw():
         x, y = xy(mark)
         up()
         goto(x + 2, y)
-        color('black')
+        color('blue')
         write(tiles[mark], font=('Arial', 30, 'normal'))
 
     update()
