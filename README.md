@@ -8,6 +8,13 @@ Sample code for the Computer Tools course challenge
 - Cannon: Score counter, Balloon Speed and infinite game
 - Memory: Click counter
 
+## Changes by Diego Emiliano Figueroa Guillén 
+## 4th Semester, ITD
+- Paint: Circle and Cyan Color
+- Snake: Random colors for the snake and the food
+- Cannon: Increased projectile bullet speed and put the current score number at the top of the middle of the game
+- Memory: 
+
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
 - Paint
@@ -15,13 +22,6 @@ Games included:
 - Pacman
 - Cannon
 - Memory
-
-## Changes by Diego Emiliano Figueroa Guillén 
-## 4th Semester, ITD
-- Paint: Circle and Cyan Color
-- Snake: Random colors for the snake and the food
-- Cannon: 
-- Memory: 
 
 ## Installing the Freegames module
 
