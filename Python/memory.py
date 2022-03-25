@@ -13,6 +13,7 @@ Exercises:
 from random import *
 from turtle import *
 from freegames import path
+import turtle
 
 car = path('car.gif')
 tiles = list(range(32)) * 2
@@ -74,6 +75,15 @@ def draw():
 
     update()
     ontimer(draw, 100)
+
+#function of mesage tu start the game
+def greeting():
+    t = turtle.Turtle()
+    if tap < 1:
+        t.color('black')
+        t.write('Click anywhere to start', font=('Courier', 30, 'italic'))
+    else:
+        print()
 
 shuffle(tiles)
 setup(420, 420, 370, 0)
