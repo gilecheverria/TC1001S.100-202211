@@ -38,6 +38,7 @@ To install the required software, run the following commands:
 ## Andres
 - Snake: speeds up the game, randomizes board size
 - Pacman: changes ghost colors, starts Pacman at the center and speeds up the game
+- Memory: changes font color to blue and grid color to red
 
 ## Ignacio
 -
