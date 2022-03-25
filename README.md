@@ -16,6 +16,13 @@ Games included:
 - Cannon
 - Memory
 
+## Changes by Diego Emiliano Figueroa Guillén 
+## 4th Semester, ITD
+- Paint: Circle and Cyan Color
+- Snake: Random colors for the snake and the food
+- Cannon: 
+- Memory: 
+
 ## Installing the Freegames module
 
 1. Make sure Python 3 is installed in your computer, and that you can call
