@@ -87,15 +87,15 @@ def draw():
         goto(0,0)
         color('white')
         write("You have already finished", align="center", font=("Arial", 20, "bold"))
-
-    update()
-    ontimer(draw, 100)
-
 # Mesage to start the game
     t = turtle.Turtle()
     if clicks == 0:
         t.color('black')
         t.write('Click anywhere to start', align='center', font=('Courier', 20, 'italic'))
+    update()
+    ontimer(draw, 100)
+
+
 
 shuffle(tiles)
 setup(420, 420, 370, 0)
