@@ -82,7 +82,7 @@ def draw():
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))    
         
-    if couples == 32
+    if couples == 32:
         up()
         goto(0,0)
         color('white')
@@ -91,14 +91,11 @@ def draw():
     update()
     ontimer(draw, 100)
 
-#function of mesage tu start the game
-def greeting():
+# Mesage to start the game
     t = turtle.Turtle()
-    if tap < 1:
+    if clicks == 0:
         t.color('black')
-        t.write('Click anywhere to start', font=('Courier', 30, 'italic'))
-    else:
-        print()
+        t.write('Click anywhere to start', align='center', font=('Courier', 20, 'italic'))
 
 shuffle(tiles)
 setup(420, 420, 370, 0)
