@@ -41,7 +41,9 @@ To install the required software, run the following commands:
 - Memory: changes font color to blue and grid color to red
 
 ## Ignacio
--
+- Snake: Random colors for food and snake. Randomized from a list of 5.
+- Pacman: Updated Score UI. Now it's in the middle and says "Score: {score}"
+- Memory: Updated Font. Now it's bolded, italiziced, and slightly smaller. 
 
 ## David
 -
