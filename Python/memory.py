@@ -82,7 +82,7 @@ def draw():
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))    
         
-    if couples == 32
+    if couples == 32:
         up()
         goto(0,0)
         color('white')
@@ -91,7 +91,7 @@ def draw():
     update()
     ontimer(draw, 100)
 
-#function of mesage tu start the game
+#function of mesage to start the game
 def greeting():
     t = turtle.Turtle()
     if tap < 1:
