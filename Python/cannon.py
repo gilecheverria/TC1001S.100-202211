@@ -12,11 +12,14 @@ Exercises
 from random import randrange
 from turtle import *
 from freegames import vector
+import random
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
 score = 0
+colors = ["pink", "orange", "yellow", "blue"]
+colorBalls = random.choice(colors)
 
 def tap(x, y):
     "Respond to screen tap."
@@ -36,7 +39,7 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, colorBalls)
 
     if inside(ball):
         goto(ball.x, ball.y)
