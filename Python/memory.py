@@ -14,7 +14,7 @@ from random import *
 from turtle import *
 from freegames import path
 
-car = path('car.gif')
+mountain = path('car.gif')
 tiles = list(range(32)) * 2
 state = {'mark': None}
 hide = [True] * 64
@@ -55,7 +55,7 @@ def draw():
     "Draw image and tiles."
     clear()
     goto(0, 0)
-    shape(car)
+    shape(mountain)
     stamp()
 
     for count in range(64):
@@ -70,14 +70,14 @@ def draw():
         up()
         goto(x + 2, y)
         color('blue')
-        write(tiles[mark], font=('Arial', 30, 'normal'))
+        write(tiles[mark], font=('Verdana', 24, 'normal', 'bold', 'italic'))
 
     update()
     ontimer(draw, 100)
 
 shuffle(tiles)
 setup(420, 420, 370, 0)
-addshape(car)
+addshape(mountain)
 hideturtle()
 tracer(False)
 onscreenclick(tap)
