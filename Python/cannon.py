@@ -1,12 +1,9 @@
 """Cannon, hitting targets with projectiles.
-
 Exercises
-
 1. Keep score by counting target hits.
 2. Vary the effect of gravity.
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
-
 """
 
 from random import randrange
@@ -14,20 +11,21 @@ from turtle import *
 from freegames import vector
 import random
 
-ball = vector(-200, -200)
+ball = vector(-200,-200)
 speed = vector(0, 0)
 targets = []
 score = 0
 colors = ["pink", "orange", "yellow", "blue"]
 colorBalls = random.choice(colors)
+sp=5 #speed
 
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        speed.x = (x*sp + 200) / 25
+        speed.y = (y*sp + 200) / 25
 
 def inside(xy):
     "Return True if xy within screen."
@@ -45,6 +43,9 @@ def draw():
         goto(ball.x, ball.y)
         dot(6, 'red')
 
+    goto(0,190)
+    write(score,font=("Arial",20))
+        
     update()
 
 def move():
@@ -62,7 +63,7 @@ def move():
 
     # Move the cannon shot
     if inside(ball):
-        speed.y -= 0.35
+        speed.y -= 0.35*sp
         ball.move(speed)
 
     # Make a copy of the existing target list before redrawing
@@ -94,4 +95,5 @@ up()
 tracer(False)
 onscreenclick(tap)
 move()
-done()
+done()  
+
