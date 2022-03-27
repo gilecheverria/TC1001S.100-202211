@@ -1,3 +1,10 @@
+"""
+Team members
+1) Mario Ignacio Frías Piña
+2) Diego Emiliano Figueroa Guillén
+3) Santiago Tena Zozaya
+
+"""
 from turtle import *
 from random import randrange
 from freegames import square, vector
@@ -6,7 +13,7 @@ import random
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
-colors  = ["green","blue","orange","purple","pink","yellow"] 
+colors  = ["green","blue","orange","purple","pink","yellow"] # List of colors
 colorSnake = random.choice(colors)
 colorFood= random.choice(colors)
 
@@ -61,7 +68,7 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, colorSnake)
+        square(body.x, body.y, 9, colorSnake) 
 
     square(food.x, food.y, 9, colorFood)
     update()
