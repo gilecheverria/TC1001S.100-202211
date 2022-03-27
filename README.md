@@ -1,6 +1,18 @@
 # TC1001S - Herramientas Computacionales
 Sample code for the Computer Tools course challenge
 
+## Team members
+1) Mario Ignacio Frías Piña
+2) Diego Emiliano Figueroa Guillén
+3) Santiago Tena Zozaya
+
+## Project description
+The project consists of the collaborative work team made up of 3 members, managing to use all the resources and knowledge previously acquired with respect to GitHub and git. It is worth saying that the first thing that was done was to fork the teacher's repository and after that, our own version was generated. Later, with the use of the different commands specifically designed for the terminal, each member made a modification of each of the four selected games. It is important to note that the games that we have chosen as a group are:
+1) paint.py
+2) snake.py
+3) cannon.py
+4) memory.py
+
 ## Changes by Mario Frias Pina
 ## 3rd Semester, ITC
 - Paint: Rectangle and Pink Color
