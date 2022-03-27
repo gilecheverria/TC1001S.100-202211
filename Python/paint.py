@@ -1,15 +1,16 @@
 """Paint, for drawing shapes.
 
-Exercises
+Team members
+1) Mario Ignacio Frías Piña
+2) Diego Emiliano Figueroa Guillén
+3) Santiago Tena Zozaya
 
+Exercises
 1. Add a color.
 2. Complete circle.
 3. Complete rectangle.
 4. Complete triangle.
 5. Add width parameter.
-
-Authors:
-Gilberto Echeverria
 
 """
 
