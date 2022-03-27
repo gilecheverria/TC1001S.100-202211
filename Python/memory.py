@@ -1,7 +1,10 @@
 """Memory, puzzle game of number pairs.
+Team Members
+1) Mario Ignacio Frías Piña
+2) Diego Emiliano Figueroa Guillén
+3) Santiago Tena Zozaya
 
 Exercises:
-
 1. Count and print how many taps occur.
 2. Decrease the number of tiles to a 4x4 grid.
 3. Detect when all tiles are revealed.
@@ -86,7 +89,7 @@ def draw():
         up()
         goto(0,0)
         color('white')
-        write("You have already finished", align="center", font=("Arial", 20, "bold"))
+        write("You have already finished", align="center", font=("Arial", 20, "bold")) # Message that indicates that you have finished
 # Mesage to start the game
     t = turtle.Turtle()
     if clicks == 0:
