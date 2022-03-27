@@ -1,4 +1,9 @@
 """Cannon, hitting targets with projectiles.
+Team members
+1) Mario Ignacio Frías Piña 
+2) Diego Emiliano Figueroa Guillén
+3) Santiago Tena Zozaya 
+
 Exercises
 1. Keep score by counting target hits.
 2. Vary the effect of gravity.
